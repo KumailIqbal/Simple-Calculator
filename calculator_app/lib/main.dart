@@ -1,5 +1,6 @@
 import 'package:calculator_app/widgets/calc_button.dart';
 import 'package:flutter/material.dart';
+// import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(CalculatorApp());
@@ -18,7 +19,8 @@ class _CalculatorAppState extends State<CalculatorApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Calculator",
-      theme: ThemeData(primarySwatch: Colors.cyan),
+      theme: ThemeData(primarySwatch: Colors.cyan,
+       ),
       home: Scaffold(
         appBar: AppBar(
           title: Center(child: Text("Flutter Calculator")),
