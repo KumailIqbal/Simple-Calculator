@@ -4,19 +4,21 @@ class CalculatorButton extends StatelessWidget {
   final String text;
   final int fillcolor;
   final int bttncolor;
-  // final Function callback;
+  final Function callback;
 
   const CalculatorButton({
     required this.text,
     required this.fillcolor,
     required this.bttncolor,
-    // required this.callback,
+    required this.callback,
   });
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        callback(text);
+      },
       child: Container(
         margin: EdgeInsets.all(10.0),
         height: 80,
